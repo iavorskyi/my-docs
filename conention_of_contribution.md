@@ -45,14 +45,15 @@
 
 ### Special marks:
 **!:** [optional] placed after the commit type in case you want to pay team attention to this commit (for ex. - breaking changes)
+
 **BREAKING CHANGE:** [optinal] introduces a breaking API change (correlating with MAJOR in Semantic Versioning). A BREAKING CHANGE can be part of commits of any type.
 ### Examples
 
 ---
 #### Commit message with description and breaking change footer:
-
 feat: allow provided config object to extend other configs
 BREAKING CHANGE: \`extends\` key in config file is now used for extending other config files
+
 ---
 #### Commit message with ! to draw attention to breaking change:
 feat!: send an email to the customer when a product is shipped
