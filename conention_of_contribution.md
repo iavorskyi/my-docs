@@ -14,6 +14,7 @@
 
 ## Brunching
 **main:** it's the main brunch with production-ready code
+
 **[example-name-brunch]:*** new brunch must be forked from "main" for further development
 
 *\* name must be:*
