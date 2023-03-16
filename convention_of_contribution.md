@@ -1,4 +1,4 @@
-# Contribution convention
+# Сonvention
 ## Contribution steps
 1. You must be assigned to an issue you want to resolve
 2. Do the fork from the updated "main" brunch locally
@@ -14,7 +14,8 @@
 
 ## Brunching
 **main:** it's the main brunch with production-ready code
-**[example-name-brunch]:*** new brunch forked from "main" for further development
+
+**[example-name-brunch]:*** new brunch must be forked from "main" for further development
 
 *\* name must be:*
 - *self-explained;*
@@ -28,7 +29,7 @@
 
 [optional footer]
 ```
-### Types
+\<type\>:
 - **fix:** a commit of the type fix patches a bug in your codebase (this correlates with PATCH in Semantic Versioning)
 - **feat:** a commit of the type feat introduces a new feature to the codebase (this correlates with MINOR in Semantic Versioning)
 - **test:** changes on the test layer of the code
@@ -39,10 +40,12 @@
 - **chore:** some routine or bureaucratic things for product support, keeping it updated and secured
 
 **\<body\>:** description of all changes in the commit. Each change starts from a new line with "\*" in lowercase
+
 **\<footer\>:** is used to place related links (for ex. - related issues). Here could be placed some needed notes.
 
 ### Special marks:
 **!:** [optional] placed after the commit type in case you want to pay team attention to this commit (for ex. - breaking changes)
+
 **BREAKING CHANGE:** [optinal] introduces a breaking API change (correlating with MAJOR in Semantic Versioning). A BREAKING CHANGE can be part of commits of any type.
 ### Examples
 
@@ -87,3 +90,6 @@ iss: #123 (linked)
 
 # Pull request
 **[name]:** must explain the reason it was created and shortly describe the issue it has to resolve; must start with a capital letter;
+- Must be linked to the issue that related with this PR
+- Must be requested code reviewers
+- Squash the commits before merging with main
