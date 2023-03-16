@@ -40,10 +40,11 @@
 
 ### Special marks:
 **!:** [optional] placed after the commit type in case you want to pay team attention to this commit (for ex. - breaking changes)
+
 **BREAKING CHANGE:** [optinal] introduces a breaking API change (correlating with MAJOR in Semantic Versioning). A BREAKING CHANGE can be part of commits of any type.
 
-**<body>:** description of all changes in the commit. Each change starts from a new line with "\*" in lowercase
-**<footer>:** is used to place related links (for ex. - related issues). Here could be placed some needed notes.
+**\<body\>:** description of all changes in the commit. Each change starts from a new line with "\*" in lowercase
+**\<footer\>:** is used to place related links (for ex. - related issues). Here could be placed some needed notes.
 ### Examples
 
 ---
