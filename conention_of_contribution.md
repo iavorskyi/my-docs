@@ -28,7 +28,8 @@
 
 [optional footer]
 ```
-### Types
+
+\<type\>:
 - **fix:** a commit of the type fix patches a bug in your codebase (this correlates with PATCH in Semantic Versioning)
 - **feat:** a commit of the type feat introduces a new feature to the codebase (this correlates with MINOR in Semantic Versioning)
 - **test:** changes on the test layer of the code
@@ -39,6 +40,7 @@
 - **chore:** some routine or bureaucratic things for product support, keeping it updated and secured
 
 **\<body\>:** description of all changes in the commit. Each change starts from a new line with "\*" in lowercase
+
 **\<footer\>:** is used to place related links (for ex. - related issues). Here could be placed some needed notes.
 
 ### Special marks:
