@@ -30,7 +30,10 @@
 [optional footer]
 ```
 
-\<type\>:
+\<first line\>: here we introduce the type from the defined options below, optionally specify a scope(domain), and shortly describe the changes in this commit
++ must be no lnger than 100 symbols
++ if this is final squashed commit with merging to main brunch, must contain link to PR (ex. #45)
+  #### Variants of types:
 - **fix:** a commit of the type fix patches a bug in your codebase (this correlates with PATCH in Semantic Versioning)
 - **feat:** a commit of the type feat introduces a new feature to the codebase (this correlates with MINOR in Semantic Versioning)
 - **test:** changes on the test layer of the code
@@ -40,15 +43,24 @@
 - **build:** changes in build process
 - **chore:** some routine or bureaucratic things for product support, keeping it updated and secured
 
-**\<body\>:** description of all changes in the commit. Each change starts from a new line with "\*" in lowercase
+**\<body\>:** description of all changes in the commit 
++ must be one empty line before body
++ each change starts from a new line with "\*" 
++ must be in lowercase
+
 
 **\<footer\>:** is used to place related links (for ex. - related issues). Here could be placed some needed notes.
++ must be one empty line before footer
++ must be in lowercase
 
 ### Special marks:
 **!:** [optional] placed after the commit type in case you want to pay team attention to this commit (for ex. - breaking changes)
 
 **BREAKING CHANGE:** [optinal] introduces a breaking API change (correlating with MAJOR in Semantic Versioning). A BREAKING CHANGE can be part of commits of any type.
 ### Examples
+
+### Other requeremets
+
 
 ---
 #### Commit message with description and breaking change footer:
