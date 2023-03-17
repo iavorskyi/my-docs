@@ -1,21 +1,21 @@
 # Contribution convention
 ## Contribution steps
 1. You must be assigned to an issue you want to resolve
-2. Do the fork from the updated "main" brunch locally
-3. All necessary changes must be done to the new brunch
-4. Push a new brunch to the repository (it will be created there and set as the origin for the local one)
+2. Do the fork from the updated "main" branch locally
+3. All necessary changes must be done to the new branch
+4. Push a new branch to the repository (it will be created there and set as the origin for the local one)
 5. Make a Pull request
 6. Link the issue related to this PR
 7. Make the request for code review
-8. If you are allowed to marge your brunch with main, choose the option with squashing commits. Describe correctly all changes according to the commit convention described below.
+8. If you are allowed to marge your branch with main, choose the option with squashing commits. Describe correctly all changes according to the commit convention described below.
 9. Ensure that the link for this PR was placed in the commit name and the link for the issue in the commit footer
 10. Attached issue will be closed automatically
-11. The merged brunch will be deleted automatically
+11. The merged branch will be deleted automatically
 
-## Brunching
-**main:** it's the main brunch with production-ready code
+## Branching
+**main:** it's the main branch with production-ready code
 
-**[example-name-brunch]:*** new brunch must be forked from "main" for further development
+**[example-name-branch]:*** new branch must be forked from "main" for further development
 
 *\* name must be:*
 - *self-explained;*
@@ -23,7 +23,7 @@
 - *words separated by dash "-";*
 ## Commits:
 ```
-<type>[(optional scope)]: <description> [opotional #pr]
+<type>[(optional scope)]: <subject> [opotional #pr]
 
 *[optional body]
 
@@ -31,8 +31,9 @@
 ```
 
 \<first line\>: here we introduce the type from the defined options below, optionally specify a scope(domain), and shortly describe the changes in this commit
-+ must be no lnger than 100 symbols
-+ if this is final squashed commit with merging to main brunch, must contain link to PR (ex. #45)
++ must be no longer than 72 symbols
++ subject - capitalized
++ if this is finally squashed commit with merging to the main branch, must contain reference to PR (ex. #45)
   #### Variants of types:
 - **fix:** a commit of the type fix patches a bug in your codebase (this correlates with PATCH in Semantic Versioning)
 - **feat:** a commit of the type feat introduces a new feature to the codebase (this correlates with MINOR in Semantic Versioning)
@@ -46,8 +47,7 @@
 **\<body\>:** description of all changes in the commit 
 + must be one empty line before body
 + each change starts from a new line with "\*" 
-+ must be in lowercase
-
++ each paragraph must be capitalized
 
 **\<footer\>:** is used to place related links (for ex. - related issues). Here could be placed some needed notes.
 + must be one empty line before footer
@@ -66,7 +66,7 @@
 #### Commit message with description and breaking change footer:
 ```
 feat: allow provided config object to extend other configs
-BREAKING CHANGE: \`extends\` key in config file is now used for extending other config files
+BREAKING CHANGE: "extends" key in config file is now used for extending other config files
 ```
 
 ---
@@ -116,4 +116,8 @@ iss: #123 (linked)
 ```
 
 # Pull request
-**[name]:** must explain the reason it was created and shortly describe the issue it has to resolve; must start with a capital letter;
+**[name]:** explain the reason it was created and shortly describe the issue it has to resolve
+- name must start with a capital letter;
+- must be linked to the issue that related with this PR
+- must be requested code reviewers
+- squash the commits before merging with main
