@@ -52,33 +52,46 @@
 
 ---
 #### Commit message with description and breaking change footer:
+```
 feat: allow provided config object to extend other configs
 BREAKING CHANGE: \`extends\` key in config file is now used for extending other config files
+```
 
 ---
 #### Commit message with ! to draw attention to breaking change:
+```
 feat!: send an email to the customer when a product is shipped
+```
 
 ---
 #### Commit message with scope and ! to draw attention to breaking change:
+```
 feat(api)!: send an email to the customer when a product is shipped
+```
 
 ---
 #### Commit message with both ! and BREAKING CHANGE footer
+```
 chore!: drop support for Node 6
 
 BREAKING CHANGE: use JavaScript features not available in Node 6.
+```
 
 --- 
 #### Commit message with no body
+```
 docs: correct spelling of CHANGELOG
+```
 
 ---
 #### Commit message with scope
+```
 feat(lang): add Polish language
+```
 
 ---
 #### Commit message with multi-paragraph body and multiple footers and links for PR and issue
+```
 fix: prevent racing of requests #36
 
 * Introduce a request id and a reference to latest request. Dismiss
@@ -88,6 +101,7 @@ incoming responses other than from latest request.
 obsolete now.
 
 iss: #123 (linked)
+```
 
 # Pull request
 **[name]:** must explain the reason it was created and shortly describe the issue it has to resolve; must start with a capital letter;
