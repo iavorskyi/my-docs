@@ -38,6 +38,7 @@
 - **fix:** a commit of the type fix patches a bug in your codebase (this correlates with PATCH in Semantic Versioning)
 - **feat:** a commit of the type feat introduces a new feature to the codebase (this correlates with MINOR in Semantic Versioning)
 - **test:** changes on the test layer of the code
+- **style:** only visual changes
 - **docs:** changes in the docs
 - **ci:** changes in the CI process
 - **refactor:** the code was refactored (no fixes, no new features)
