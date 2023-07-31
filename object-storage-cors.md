@@ -1,4 +1,6 @@
-### Template of CORS policy that we set
+## CORS rules for bucket policy.
+
+#### Template of CORS policy that we set
 ```json
 {
 	"CORSRules": [
@@ -30,17 +32,18 @@
 }
 ```
 
-1. Setting this rule is necessary only for direct requests to S3 bucket. We use it in object uploading
-2. When the user tries to upload the object it's looking throw CORS-policy and checking each rule to find the one which will contain all of necessary elements.
+1. Setting this rule is necessary only for direct requests to the S3 bucket. We use it in object uploading
+2. When the user tries to upload the object it's looking throw CORS-policy and checks each rule to find the one which will contain all of the necessary elements.
 	- If the proper rule is found, the user can proceed to upload the object.
 	- If the rule isn't found - it's asking if the user agrees will add a new rule (from the template) to the bucket policy
 3. If a rule with our custom ID already exists, the new rule will NOT be appended (!) <!-- point to discuss -->
 
 ### In case CORS errors
 1. Define the region where this bucket is placed
-2. Using Postman send the request to get actual CORS policy (needs credentials for S3 storage). To authorise - use Cookie 'gosassion', taken from any another request to backend from the console:
+2. Using Postman send the request to get the actual CORS policy (needs credentials for S3 storage). To authorise - use Cookie 'gosassion', taken from another request to the backend from the console:
 
-![[Pasted image 20230731144524.png]]
+<img width="1031" alt="Screenshot 2023-07-31 at 15 21 16" src="https://github.com/iavorskyi/my-docs/assets/67505004/408e3707-a64f-41c5-8246-130425b69935">
+
 
 `example of request data`
 
@@ -74,6 +77,7 @@
 	- modify this rule
 	- delete the rule which causes the conflict with our one  
 	- delete the whole policy and set our policy one more time
+
 `example:`
 ```json
 	path: "https://console.ventuscloud.eu/v1.0/invoke/gotham-eastern-switzerland-compute/method/a346f69b258c410b959ec8abb5b95bc1/buckets/bucket1/cors-policy"
