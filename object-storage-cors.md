@@ -40,7 +40,7 @@
 
 ### In case CORS errors
 1. Define the region where this bucket is placed
-2. Using Postman send the request to get the actual CORS policy (needs credentials for S3 storage). To authorise - use Cookie 'gosassion', taken from another request to the backend from the console:
+2. Using Postman send the request to get the actual CORS policy (needs credentials for S3 storage). To authorize - use Cookie 'gosassion', taken from another request to the backend from the console:
 
 <img width="1031" alt="Screenshot 2023-07-31 at 15 21 16" src="https://github.com/iavorskyi/my-docs/assets/67505004/408e3707-a64f-41c5-8246-130425b69935">
 
